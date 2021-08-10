@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:badges/badges.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+
 void main() {
   runApp(MyApp());
 }
@@ -60,18 +61,23 @@ class _NotificationPageState extends State<NotificationPage> {
                 ),
               //  SizedBox(height: 15,),
                 ListTile(
-                  leading: CircleAvatar(
-                      backgroundImage: AssetImage('assets/img2.png'),
-                     radius: 40,
-                    ),
+                  leading: Stack(
+                    children: [
+                      CircleAvatar(
+                        backgroundImage: AssetImage('assets/img2.png'),
+                        radius: 40,
+                      ),
+
+                    ],
+                  ),
                   title: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text('SomeOne has reacted to your post'),
-                      Text('2 min ago',style: TextStyle(fontSize: 13),),
+
                     ],
                   ),
-
+                  subtitle: Text('2 min ago',style: TextStyle(fontSize: 13),),
                 ),
                 ListTile(
                   leading: CircleAvatar(
@@ -82,10 +88,10 @@ class _NotificationPageState extends State<NotificationPage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text('SomeOne has reacted to your post'),
-                      Text('2 min ago',style: TextStyle(fontSize: 13),),
+
                     ],
                   ),
-
+                  subtitle: Text('4 min ago',style: TextStyle(fontSize: 13),),
                 ),
                 ListTile(
                   leading: CircleAvatar(
@@ -96,23 +102,10 @@ class _NotificationPageState extends State<NotificationPage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text('SomeOne has reacted to your post'),
-                      Text('2 min ago',style: TextStyle(fontSize: 13),),
+
                     ],
                   ),
-
-                ),ListTile(
-                  leading: CircleAvatar(
-                    backgroundImage: AssetImage('assets/img2.png'),
-                    radius: 40,
-                  ),
-                  title: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text('SomeOne has reacted to your post'),
-                      Text('2 min ago',style: TextStyle(fontSize: 13),),
-                    ],
-                  ),
-
+                  subtitle: Text('10 min ago',style: TextStyle(fontSize: 13),),
                 ),
                 ListTile(
                   leading: CircleAvatar(
@@ -123,10 +116,10 @@ class _NotificationPageState extends State<NotificationPage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text('SomeOne has reacted to your post'),
-                      Text('2 min ago',style: TextStyle(fontSize: 13),),
+
                     ],
                   ),
-
+                  subtitle: Text('30 min ago',style: TextStyle(fontSize: 13),),
                 ),
                 ListTile(
                   leading: CircleAvatar(
@@ -137,10 +130,10 @@ class _NotificationPageState extends State<NotificationPage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text('SomeOne has reacted to your post'),
-                      Text('2 min ago',style: TextStyle(fontSize: 13),),
+
                     ],
                   ),
-
+                  subtitle: Text('55 min ago',style: TextStyle(fontSize: 13),),
                 ),
                 ListTile(
                   leading: CircleAvatar(
@@ -151,24 +144,10 @@ class _NotificationPageState extends State<NotificationPage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text('SomeOne has reacted to your post'),
-                      Text('2 min ago',style: TextStyle(fontSize: 13),),
+
                     ],
                   ),
-
-                ),
-                ListTile(
-                  leading: CircleAvatar(
-                    backgroundImage: AssetImage('assets/img4.png'),
-                    radius: 40,
-                  ),
-                  title: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text('SomeOne has reacted to your post'),
-                      Text('2 min ago',style: TextStyle(fontSize: 13),),
-                    ],
-                  ),
-
+                  subtitle: Text('55 min ago',style: TextStyle(fontSize: 13),),
                 ),
                 ListTile(
                   leading: CircleAvatar(
@@ -179,52 +158,10 @@ class _NotificationPageState extends State<NotificationPage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text('SomeOne has reacted to your post'),
-                      Text('2 min ago',style: TextStyle(fontSize: 13),),
+
                     ],
                   ),
-
-                ),
-                ListTile(
-                  leading: CircleAvatar(
-                    backgroundImage: AssetImage('assets/img4.png'),
-                    radius: 40,
-                  ),
-                  title: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text('SomeOne has reacted to your post'),
-                      Text('2 min ago',style: TextStyle(fontSize: 13),),
-                    ],
-                  ),
-
-                ),
-                ListTile(
-                  leading: CircleAvatar(
-                    backgroundImage: AssetImage('assets/img3.png'),
-                    radius: 40,
-                  ),
-                  title: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text('SomeOne has reacted to your post'),
-                      Text('2 min ago',style: TextStyle(fontSize: 13),),
-                    ],
-                  ),
-
-                ),
-                ListTile(
-                  leading: CircleAvatar(
-                    backgroundImage: AssetImage('assets/img3.png'),
-                    radius: 40,
-                  ),
-                  title: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text('SomeOne has reacted to your post'),
-                      Text('2 min ago',style: TextStyle(fontSize: 13),),
-                    ],
-                  ),
-
+                  subtitle: Text('55 min ago',style: TextStyle(fontSize: 13),),
                 ),
                 ListTile(
                   leading: CircleAvatar(
@@ -235,10 +172,10 @@ class _NotificationPageState extends State<NotificationPage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text('SomeOne has reacted to your post'),
-                      Text('2 min ago',style: TextStyle(fontSize: 13),),
+
                     ],
                   ),
-
+                  subtitle: Text('55 min ago',style: TextStyle(fontSize: 13),),
                 ),
                 ListTile(
                   leading: CircleAvatar(
@@ -249,10 +186,10 @@ class _NotificationPageState extends State<NotificationPage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text('SomeOne has reacted to your post'),
-                      Text('2 min ago',style: TextStyle(fontSize: 13),),
+
                     ],
                   ),
-
+                  subtitle: Text('55 min ago',style: TextStyle(fontSize: 13),),
                 ),
                 ListTile(
                   leading: CircleAvatar(
@@ -263,9 +200,10 @@ class _NotificationPageState extends State<NotificationPage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text('SomeOne has reacted to your post'),
-                      Text('2 min ago',style: TextStyle(fontSize: 13),),
+
                     ],
                   ),
+                  subtitle: Text('55 min ago',style: TextStyle(fontSize: 13),),
                 ),
                 ListTile(
                   leading: CircleAvatar(
@@ -276,10 +214,80 @@ class _NotificationPageState extends State<NotificationPage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text('SomeOne has reacted to your post'),
-                      Text('2 min ago',style: TextStyle(fontSize: 13),),
+
                     ],
                   ),
+                  subtitle: Text('55 min ago',style: TextStyle(fontSize: 13),),
+                ),
+                ListTile(
+                  leading: CircleAvatar(
+                    backgroundImage: AssetImage('assets/img2.png'),
+                    radius: 40,
+                  ),
+                  title: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text('SomeOne has reacted to your post'),
 
+                    ],
+                  ),
+                  subtitle: Text('55 min ago',style: TextStyle(fontSize: 13),),
+                ),
+                ListTile(
+                  leading: CircleAvatar(
+                    backgroundImage: AssetImage('assets/img2.png'),
+                    radius: 40,
+                  ),
+                  title: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text('SomeOne has reacted to your post'),
+
+                    ],
+                  ),
+                  subtitle: Text('2 min ago',style: TextStyle(fontSize: 13),),
+                ),
+                ListTile(
+                  leading: CircleAvatar(
+                    backgroundImage: AssetImage('assets/img2.png'),
+                    radius: 40,
+                  ),
+                  title: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text('SomeOne has reacted to your post'),
+
+                    ],
+                  ),
+                  subtitle: Text('2 min ago',style: TextStyle(fontSize: 13),),
+                ),
+                ListTile(
+                  leading: CircleAvatar(
+                    backgroundImage: AssetImage('assets/img2.png'),
+                    radius: 40,
+                  ),
+                  title: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text('SomeOne has reacted to your post'),
+
+                    ],
+                  ),
+                  subtitle: Text('2 min ago',style: TextStyle(fontSize: 13),),
+                ),
+                ListTile(
+                  leading: CircleAvatar(
+                    backgroundImage: AssetImage('assets/img2.png'),
+                    radius: 40,
+                  ),
+                  title: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text('SomeOne has reacted to your post'),
+
+                    ],
+                  ),
+                  subtitle: Text('2 min ago',style: TextStyle(fontSize: 13),),
                 ),
           ]
           ),
